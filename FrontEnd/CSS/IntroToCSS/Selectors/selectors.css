@@ -1,0 +1,20 @@
+/* Element Tag Selector */
+
+li {
+    border: 8px dotted teal;
+}
+ul {
+    border: 5px dotted blanchedalmond;
+}
+
+/* Class Selector */
+
+.choc {
+    background-color: chocolate;
+}
+
+/* Id selector - the same thing */
+#yellow {
+    background-color: yellow;
+}
+

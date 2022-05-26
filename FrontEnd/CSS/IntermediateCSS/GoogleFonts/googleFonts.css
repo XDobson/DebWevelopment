@@ -1,0 +1,13 @@
+/* Linking to a Google Font can also be done at the TOP of a CSS file using @import */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+p {
+  /* Google Fonts provides this for us */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  /* If you want to have text that is bold and italic you must select that specific font */
+  /* font-style: italic; */
+}
+span {
+  font-family: 'Press Start 2P', cursive;
+}

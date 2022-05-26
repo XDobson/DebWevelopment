@@ -1,0 +1,100 @@
+/* FONT FAMILY */
+/* The Font Family property/style set the font for text */
+/* The fonts that come after the Impact font are there in case the webpage is opened in a browser that does NOT support the Impact font */
+/* NOTE: Single quotes '' or double quotes "" are necessary for fonts with more than one word that NOT connected with a hyphen - */
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  /* FONT SIZE */
+  /* Using px (Pixels) will set the element's size to a fixed pixel size */
+  p {
+    font-size: 25px;
+  }
+  
+  /* em determines the font size based on the font size of the parent element (P element in this case) */
+  /* Font size will be 100px (25px x 4) */
+  #span-one {
+    font-size: 4em;
+  }
+  
+  /* The 2nd P element is only 64px because is it basing the font size off of it's parent element which is the body element. The body element has a default font size of 16px. */
+  /* Font size will be 64px (16px x 4) */
+  #p-two {
+    font-size: 4em;
+  }
+  
+  /* Even on an h1 (Largest Heading) using em will set the size based off of the font size of it's parent element (The body element) */
+  h1 {
+    font-size: 1em;
+  }
+  
+  /* This sets the root font size for all elements in the HTML file (Default root font size is 16px) */
+  /* This is used a lot at the start of a CSS file so that em can be used to set the size for different elements in the HTML file */
+  /* Notice this does NOT affect the font size in the 1st P element because it has a fixed font size. Therefore is does NOT inherit/base its font size of off the HTML/BODY elements. */
+  html {
+    font-size: 10px;
+  }
+  
+  /* rem determines the font size based on the font size of the root element (The html element) */
+  /* Font size will be 40px (10px x 4) */
+  #span-two {
+    font-size: 4rem;
+  }
+  
+  /* FONT WEIGHT */
+  /* Font Weight determines the boldness of text */
+  p {
+    font-weight: bold;
+    /* Some fonts allow for multiple levels of boldness */
+    /* font-weight: bolder; */
+    /* font-weight: 500; */
+    /* font-weight: 900; */
+  }
+  
+  /* Heading Elements (h1, h2, etc.) are already bold */
+  h1 {
+    font-weight: bold;
+  }
+  
+  /* FONT STYLE */
+  /* Determines if text is italic */
+  p {
+    font-style: italic;
+  }
+  
+  /* LINE HEIGHT */
+  /* Determines the spacing between lines of text */
+  /* NOTE: No unit of measurement needed (Ex: Pixels) */
+  p {
+    line-height: 1.5;
+  }
+  
+  /* LETTER SPACING */
+  /* Determines the spacing between letters */
+  p {
+    letter-spacing: 10px;
+  }
+  
+  /* TEXT ALIGN */
+  /* Determines the alignment of text */
+  p {
+    text-align: center;
+    /* text-align: right; */
+  }
+  
+  /* TEXT DECORATION */
+  /* Adds decoration to text */
+  span {
+    text-decoration: line-through;
+    /* text-decoration: underline; */
+  }
+  
+  /* TEXT TRANSFORM */
+  /* Determines the casing/capitalization of text */
+  p {
+    text-transform: uppercase;
+    /* text-transform: lowercase; */
+    /* Capitalize will capitalize the first letter of every word */
+    /* text-transform: capitalize; */
+  }

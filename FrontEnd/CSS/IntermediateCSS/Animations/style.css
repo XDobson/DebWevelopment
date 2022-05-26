@@ -1,0 +1,116 @@
+/* CSS Animations (AKA Transitions) */
+/* CSS Animations are the change of one CSS style to another over a period of time */
+
+div {
+  width: 200px;
+  height: 200px;
+  border: 10px solid cornflowerblue;
+  margin-bottom: 50px;
+}
+
+/* TRANSITION PROPERTY */
+/* The Transition Property can be used to complete simple animations */
+/* NOTE: The Transition Property should be used in the selector that is selecting the element (Ex: #transition) NOT the selector that causes the animation to begin (Ex: #transition:hover) */
+
+#transition {
+  /* Must specify the property or properties you are animating/transitioning or you can use "all" if you want your transition settings to apply to all transitioning properties */
+  /* transition-property: background-color width height; */
+  transition-property: all;
+
+  /* transition-duration determines the amount of time the transition takes to complete (NOTE: The amount of time can be specified in seconds "s" or milliseconds "ms") */
+  transition-duration: 2s;
+
+  /* transition-timing-function determines the acceleration/deceleration of the transition */
+  /* transition-timing-function: linear; */
+  /* transition-timing-function: ease-in; */
+  transition-timing-function: ease-out;
+  
+  /* Cubic-bezier can also be used */
+  /* transition-timing-function: cubic-bezier(0.64,-0.2, 0.87, 1.61); */
+
+  /* transition-delay determines if there is delay between the event (Ex: Hovering over the element) and the transition. Also, determines the length of the delay if there is one. */
+  transition-delay: 1s;
+
+  /* Transition Shorthand */
+  /* transition: property duration timing-function delay */
+  transition: all 2s ease-out 1s;
+}
+
+#transition:hover {
+  background-color: green;
+  width: 400px;
+  height: 400px;
+
+  /* The "transform" property is commonly used in animations to change the way the element is displayed */
+  /* rotate() can be used to rotate an element by specifying an amount of degrees using "deg" */
+  /* transform: rotate(360deg); */
+
+  /* Multiple values can be set using the transform property */
+  /* NOTE: translateX & translateY change the element's location by moving it horizontally (X-Axis) and vertically (Y-Axis) */
+  transform: translateX(200px) translateY(40px) rotate(360deg);
+}
+
+/* ANIMATION PROPERTY */
+/* The Animation Property can be used to complete more advanced/detailed animations */
+/* NOTE: Unlike the Transition Property, the Animation Property can be used in the selector that causes the animation to begin (Ex: #animation:hover). However, for this example the animation will run when the page loads or is refreshed. */
+
+#animation {
+  /* When using the animation property a name must be provided so it can be referenced when setting the keyframes */
+  /* NOTE: Names that are multiple words should be connected with a hyphen "-" (Ex: square-spin) */
+  animation-name: square-spin;
+
+  /* Same as the Transition property a duration, timing-function, and delay can be specified as well */
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+
+  /* animation-fill-mode specifies a style for the element when the animation is NOT playing (Before, After, or both) */
+  /* Setting animation-fill-mode to "forwards" will cause the element to keep the styles set for it at the final keyframe (AKA 100%) */
+  /* animation-fill-mode: forwards; */
+  /* Setting animation-fill-mode to "backwards" will cause the element to have the styles set for it at the first keyframe (AKA 0%) during the delay period */
+  /* animation-fill-mode: backwards; */
+  /* Setting animation-fill-mode to "both" will includes both the "forwards" and "backwards" features */
+  animation-fill-mode: both;
+
+  /* animation-iteration-count determines how many times the animation occurs (NOTE: If there is a delay set it will only delay before the first iteration) */
+  /* animation-iteration-count: 2; */
+  /* Setting animation-iteration-count to "infinite" will cause the animation to run continuously */
+  animation-iteration-count: infinite;
+}
+
+/* Keyframes */
+/* @keyframes is used to determine the styles at certain points during the animation */
+
+/* 
+Syntax Example...
+
+@keyframes name-of-animation {
+  percentage {
+    property: value;
+  }
+  percentage {
+    property: value;
+  }
+}
+*/
+
+/* Setting (AKA Updating) the value(s) for the transform property at different points during the animation */
+@keyframes square-spin {
+  0% {
+    background-color: cornflowerblue;
+  }
+  25% {
+    transform: translateY(100px) rotate(90deg);
+  }
+  50% {
+    transform: translateY(100px) translateX(100px) rotate(180deg);
+  }
+  75% {
+    transform: translateX(100px) rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    /* NOTE: Styles set or updated in @keyframes will be removed at the end of the animation. So in this case the rebeccapurple color is removed at the end of the animation */
+    background-color: rebeccapurple;
+  }
+}

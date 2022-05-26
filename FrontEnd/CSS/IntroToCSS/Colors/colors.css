@@ -1,0 +1,70 @@
+/* Color names */
+
+h1 {
+    color: thistle;
+}
+
+h1 {
+    color: blue;
+}
+/* blue overrides thistle because it comes later. */
+
+/* A Hex Code is assigned to every possible color, and uses hexidecimal characters.
+ a hexidecimal character uses base 16, using 10 numbers and 6 letters to represent 
+ a number between 0 and 16. A Hex Code is made of 6 hexidecimal characters, where the 
+ first 2 represent the amount of red, the second pair represents the amount of red,
+ and the third pair represents the amount of blue. */
+
+ /* 
+ #FFFFFF - White
+ #000000 - Black
+ #123456 - Some color
+ #112233 - Showing the pairs
+ */
+
+ h1 {
+     color: #0000ff;
+ }
+
+ h1 {
+     color: #00ff00;
+ }
+
+ h1 {
+     color: #ff0000;
+ }
+
+ /* The shorthand for hex code uses 3 numbers or letters to represent the full 6 
+ by representing each of the three numbers/letters to represent a duplicate pair
+ of the matching pair. see below */
+
+ h1 {
+     color: #112233;
+ }
+
+ h1 {
+     color: #123;
+ }
+
+ /* Transparancy works by adding an extra pair to the end of a hex code. this pair 
+ represents how see-through the color is on a scale where 0% opaque is 00 and 
+ 100% opaque is FF */
+
+ h1 {
+     color: #0000FF88;
+ }
+ /* above is half transparent, or close to 50% */
+
+
+ /* rgb is another way to represent colors and uses three numbers. instead of 2 hexidecimals making up one value
+ each value for red green and blue is represented by a number between 0 and 255  */
+
+ h1 {
+     color: rgb(0,255,0);
+ }
+
+ /* You can represent transparancey with RGB using a fourth number; Alpha (RGBA() */
+/* Alpha only goes to 1 and is a decimal usually */
+ h1 {
+     color: rgb(0,255,0,0.5);
+ }

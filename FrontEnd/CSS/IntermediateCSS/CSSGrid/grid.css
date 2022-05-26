@@ -1,0 +1,53 @@
+h1 {
+    background-color: navy;
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    border: solid 5px cornflowerblue;
+}
+
+/* Grid */
+#main {
+    display: grid;
+
+    /* Sets width of columns in grid */
+    grid-template-columns: 250px 200px 150px;
+    /* also sets # of columns. can use percents, pixels, ect */
+    /* easy way to repeat same amt over multiple columns */
+    grid-template-columns: repeat(3, 200px);
+
+    /* Similar to flex grow or flex box, fraction can be used to make columns. ex. 1fr 2fr 3fr is a ratio of 1:2:3 */
+
+    grid-template-columns: 1fr 2fr 3fr;
+
+    /* Girds usually auto-makes rows, but heres how to force their height. If grid-template-rows is used, unspecified rows default to this value */
+    grid-auto-rows: 200px;
+
+    /* more custom things */
+    /* grid-row-gap: ; */
+    /* grid-column-gap: ; */
+    /* grid-gap: ; */
+}
+
+/* Selecting Cells */
+/* determines how many columns or rows an element takes up. Start is which it starts on, end is the one it ends just before (4, ends on 3) */
+#first {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#second {
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+#third {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#fourth {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#fifth {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}

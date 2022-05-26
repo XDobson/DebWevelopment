@@ -1,0 +1,13 @@
+/* Style sheet is the best way to style a webpage as it keeps clutter out of your HTML file */
+
+h1 {
+    color: aquamarine;
+}
+
+li {
+    color: orange;
+}
+
+h2 {
+    color: red;
+}

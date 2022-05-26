@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTML Non Input Form Elements">
+  <title>HTML Non Input Form Elements</title>
+</head>
+<body>
+  <form>
+    <!-- Select Elements -->
+    <!-- Select Elements have opening and closing tags. Must create options elements inside of those tags. -->
+    <label for="fastFood">Favorite Fast Food</label>
+    <select name="fastFood" id="fastFood">
+      <!-- The hidden attribute/keyword will make the option no longer display after the user clicks the select element (AKA Dropdown menu) -->
+      <option hidden>Select a Restaurant</option>
+      <!-- When a form with a select element is submitted the value set for the option selected will be what is sent -->
+      <option value="mcdonalds">McDonalds</option>
+      <option value="arbys">Arby's</option>
+      <option value="zaxbys">Zaxby's</option>
+      <option value="burgerKing">Burger King</option>
+      <option value="chickFilA">Chick-Fil-A</option>
+      <option value="paneraBread">Panera Bread</option>
+      <option value="wendys">Wendy's</option>
+    </select>
+
+    <br>
+
+    <!-- Textarea -->
+    <label for="joke">Type out a funny Dad joke:</label>
+    <br>
+    <!-- Textarea is a textbox where the user can type. The cols and rows attributes determine the size of the textarea. -->
+    <!-- Text in between the opening and closing tags will be set as the starting value (NOTE: This will override a placeholder) -->
+    <textarea name="joke" id="joke" cols="10" rows="10" placeholder="Knock Knock">What do you call an alligator that is wearing a vest?</textarea>
+
+    <br>
+
+    <!-- Button Element -->
+    <!-- Similar to a submit input, the button element will also submit/send the values inside the elements in the form. (NOTE: Button element must be inside the form tags that the other elements are inside of for them to be submitted/sent when the button is clicked) -->
+    <button>Click Here To Submit Form</button>
+
+  </form>
+
+  <form>
+    <!-- Fieldset -->
+    <!-- Fieldset is used to group related elements on page. A legend element is commonly used with a Fieldset to add a title to it. -->
+    <fieldset>
+      <legend>Favorite Desserts</legend>
+      <label for="cold">Cold</label>
+      <select name="cold" id="cold">
+        <option value="iceCream">Ice Cream</option>
+        <option value="popsicles">Popsicles</option>
+        <option value="frozenYogurt">Frozen Yogurt</option>
+        <option value="iceCreamCake">Ice Cream Cake</option>
+        <option value="cheesecake">Cheesecake</option>
+      </select>
+      <br>
+      <label for="warm">Warm</label>
+      <select name="warm" id="warm">
+        <option value="brownies">Brownies</option>
+        <option value="pie">Pie</option>
+        <option value="cookies">Cookies</option>
+        <option value="scones">Scones</option>
+        <option value="cake">Cake</option>
+        <option value="donut">Donut</option>
+      </select>
+      <br>
+      <button>Click Here</button>
+    </fieldset>
+  </form>
+</body>
+</html>

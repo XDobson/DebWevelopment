@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#main{ 
+    background-color: grey;
+    height: 575px;
+}
+
+h1 {
+    width: 150px;
+    border: 3px solid black;
+    font-size: 30px;
+}
+
+#red {
+    background-color: red;
+    height: 225px;
+}
+
+#green {
+    background-color: green;
+    height: 150px;
+}
+
+#blue {
+    background-color: cornflowerblue;
+    height: 75px;
+}
+
+/* New Stuff Here */
+/* Flex Box */
+/* (and maybe some Grid) */
+
+/* Flexbox allows for flexible and responsive layouts ot be created without using float or position */
+
+#main{
+    display: flex;
+/* Flex start is just default, doesn't do anything here */
+    /* justify-content: flex-start; */
+/* Moves content to end of main axis (x axis) */
+    /* justify-content: flex-end; */
+/* take a guess */
+    /* justify-content: center; */
+/* Tries to evenly space content  */
+    /* justify-content: space-between; */
+/* Evenly spaces but acknowledges the sides of the web page and spaces from them */
+    /* justify-content: space-around; */
+/* Like the previous but all space is even */
+    /* justify-content: space-evenly; */
+
+    /* i think this is just the default, but if something has a min-height, it will stretch to fill the container */
+align-items:stretch;
+
+    /* Centers in on the vertical axis relative to its container */
+align-items: center;
+
+    /* Start and end of axis. can be used with min and max height */
+align-items: flex-end;
+align-items: flex-start;
+
+    /* Can't use space-between or space-around because the items are ordered horizontally not vertically */ 
+
+    /* Flex Wrap */
+    flex-wrap: wrap;
+    /* When the view port is too small to display elements at their set width, the items will wrap back around and appear below the axis*/
+
+    /* Align content is used for when content wraps into a new line */
+    align-content: center;
+
+    /* Changes direction of main axis. */
+    /* Flips all of our previous properties; Align axis is now horizontal and Flex (main) axis is now vertical  */
+    flex-direction: column;
+
+    /* this affects the main axis, and because of the previous command, the content goes down because thats where the end of the main axis is */
+    justify-content: flex-end;
+
+    /* this one does the same but with the secondary axis, so now it affects the horizontal axis  */
+    align-content: flex-end;
+
+    /* Reverse versions flips the start and end of the axis. */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+}

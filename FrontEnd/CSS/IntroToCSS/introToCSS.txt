@@ -1,0 +1,19 @@
+CSS
+
+C ascading
+S tyle
+S heet
+
+Language used to style an HTML file (Webpage)
+CSS tells the elements how to be displayed.
+
+1.Styles/Properties
+    A. CSS has many styles. Styles change how elements look and how theyre displayed.
+        i. color, border, font, ect.
+
+2.Selectors 
+    A.Used to select an element or multiple element to later add styles to it
+        i.Element, Class, ID, ect.
+
+3.File Naming
+    A. CSS files end with (shocker) ".css" It doesnt matter what you name the CSS file

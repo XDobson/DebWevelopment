@@ -1,0 +1,19 @@
+Web Development...
+
+Web Development is process/work of creating websites/application for internet
+
+1. Front End
+  A. Front End Development involves working on part of a website/application that the user interacts with.
+  B. HTML, CSS, & JavaScript are the three core components/languages that make up Front End Development.
+    i. HTML is basic structure/content (Or Skeleton) of a website
+    ii. CSS is the look/style (Or Skin) of a website
+    iii. JavaScript is the functionality (Or Movement) of a website
+2. Back End
+  A. Back End Development involves working on the part of a website/application that is NOT seen by the user.
+  B. The core components of Back End are databases and servers.
+  C. Important technologies/languages for Back End Development are...
+    i. Server-side languages
+    ii. Back End Frameworks
+    iii. Databases
+3. Full Stack
+  A. Full Stack Development is combination of Front End and Back End

@@ -1,0 +1,52 @@
+/* Box Model */
+
+h1 {
+    /* Content */
+
+    background-color: green;
+    /* width: 20px;
+    height: 250px; */
+
+    /* 20% of the webpage even when resized */
+    width: 20%;
+
+    /* Padding */
+    /* Background includes padding + content */
+
+    /* All Sides */
+    /* padding: 14px; */
+
+    /* Specific Side */
+    /* padding-top: 30px; */
+
+    /* Top/bottom and Left/Right */
+    /* padding: 10px 75px; */
+
+    /* Top,right,bottom,left */
+    /* padding: 7px 30px 50px 90px; */
+
+    /* padding: 0; */
+
+    /* Border */
+    /* You know how borders work */
+    /* border: solid 10px magenta; */
+
+    /* Margin */
+    /* Auto automatically enlarges the width of the margin to center the element */
+    /* margin: 90px auto; */
+
+    /* Border Box */
+
+
+    width: 250px;
+    height: 250px;
+    padding: 50px;
+    border: 50px solid blue;
+    /* box-sizing: border-box; */
+
+    /* Display Property */
+    /* can be used to change elements to block, inline, or inline block */
+    /* display: block; */
+    /* display: inline; */
+    display: inline-block;
+}

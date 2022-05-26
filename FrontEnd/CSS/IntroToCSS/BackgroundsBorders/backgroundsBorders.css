@@ -1,0 +1,50 @@
+h1 {
+    color: white;
+}
+h2 {
+    color: white;
+}
+h3 {
+    color: white;
+}
+
+/* Background */
+/* 60,59,110 */
+
+/* body {
+    background-color: rgb(0, 0, 0);
+} */
+
+h2 {
+    background-color: rgb(60, 59, 110);
+}
+
+div {
+    background-color: rgb(178,34,52,0.5);
+}
+
+body {
+    /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mount_Rushmore_detail_view_%28100MP%29.jpg/1200px-Mount_Rushmore_detail_view_%28100MP%29.jpg);
+    background-size: cover; */
+
+    background-image: url(mountRushmore.jpg);
+    background-size: cover;
+
+    /* background-repeat: no-repeat; */
+}
+
+/* Bordering things */
+h3 {
+    border-width: 7px;
+    border-style: solid;
+    border-color: white;
+}
+h3 {
+    border: 7px solid white;
+
+    border-radius: 10px;
+}
+div {
+    border-top: 15px dotted rgb(60, 59, 110);
+    border-right: 22px solid royalblue;
+}

@@ -1,0 +1,68 @@
+img, #main {
+    border: 3px solid black;
+}
+
+#main {
+    height: 475px;
+}
+
+#main img {
+  width: 250px;
+  height: 250px;  
+}
+
+#dogs {
+    width: 250px;
+    height: 250px;
+}
+
+img[alt="Frog"] {
+    width: 100%;
+}
+
+/* Position */
+/* Position uses top bottom left and right to change the visual of an element */
+/* Static is default */
+#one {
+    position: static;
+
+/* Relative changes makes it so you change its position relative to its original position in the webpage. Think of it as an offset. other elements still respect its original space where it is when top/left/bottom/right are unchanged */
+    position: relative;
+    top: 300px;
+    left: 600px;
+}
+
+#two {
+    /* Absolute changes position relative to the first ancestor that has a position other than static. it goes all the way up to root until it finds one. Absolute elements do not take up space relative to other elements*/
+    position: absolute ;
+    bottom: 10px;
+    right: 10px;
+}
+
+#three {
+    /* Fixed elements take up no space on the webpage and stay on the same spot of the screen, even when scrolling. */
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#kindle {
+    /* Sticky means it follows the user while scrolling, but only sometimes. As you scroll past it, it will follow, but will stay where it is supposed to until you begin to scroll. ONLY SCROLLS FOR AS LONG AS ITS STILL IN ITS PARENT ELEMENT. Requires that you have a top/bottom value so it knows when to begin sticking. */
+    position: sticky;
+    top: 0;
+}
+
+#dogs { 
+    /* Dogs image parent is the whole page so it doesnt stop like the other one */
+    position: sticky;
+    top: 0;
+}
+
+/* z-index - whos on top */
+/* higher numbers go on top */
+#two {
+    z-index: 2;
+}
+#three {
+    z-index: 1;
+}

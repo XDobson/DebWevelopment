@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#main{ 
+    background-color: grey;
+    height: 575px;
+}
+
+h1 {
+    width: 150px;
+    border: 3px solid black;
+    font-size: 30px;
+}
+
+#red {
+    background-color: red;
+    height: 225px;
+}
+
+#green {
+    background-color: green;
+    height: 150px;
+}
+
+#blue {
+    background-color: cornflowerblue;
+    height: 75px;
+}
+
+/* Lets begin */
+#main {
+    display: flex;
+}
+
+/* Flex grow decides what elements take up the extra space. If grow is set to 0 for all elements and 1 to the other, then the element set to 1 takes up all the extra space. However, if there are varying values, it works like a ratio. for instance, below, red:green:blue is shared like the ratio 2:2:3*/
+#red{
+    flex-grow: 2;
+}
+#green{
+    flex-grow: 2;
+}
+#blue{
+    flex-grow: 3;
+}
+/* its important to mention that only the EXTRA space is being divided. The space the content takes up initially does not get added into the calculations */
+
+/* Flex Shrink controls how much elements shrink when the view port is sized down smaller than the sum of all elements on a line (not counting any extra growth from other properties like flex-grow). Flex Shrink 0 makes it so an element doesn't shrink, and higher values make the contents shrink faster than other elements with lower values */
+#red{
+    flex-shrink: 1;
+}
+#green{
+    flex-shrink: 10;
+}
+#blue{
+    flex-shrink: 1;
+}
+/* Defaults to 1 */
+
+/* Flex Basis determines where the flex grow/shrink properties start; defaults to auto */
+#red{
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 400px;
+}
+
+/* Shorthand. Flex: [grow] [shrink] [basis]; */
+#potato{
+    flex: 3 5 100px;
+}
+
+/* Ordering */
+#red{
+    order: 2;
+}
+#green{
+    order: 3;
+}
+#blue{
+    order: 1;
+}
+/* Changes the order of flex elements */
+
+/* align self aligns just that element */
+#red{
+    flex-grow: 2;
+    align-self: center;
+    
+}

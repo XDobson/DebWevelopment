@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTML Forms Review">
+  <title>HTML Forms Review</title>
+</head>
+
+<body>
+  <h1>HTML Forms Review</h1>
+
+  <form>
+    <!-- The "for" and "id" attributes can be used to link/bind labels and inputs together -->
+    <label for="fullName">Full Name</label>
+    <!-- The type attribute determines the type of input -->
+    <!-- The placeholder attribute set the text/content that is displayed and is removed after something is entered into the input -->
+    <!-- The name attribute is used to access the value entered in an input after the form is submitted -->
+    <!-- The required attribute/keyword is used to require the user to complete (AKA Fill out) a specific input -->
+    <input type="text" id="fullName" placeholder="Enter Name" name="fullName" required>
+
+    <br>
+
+    <!-- Color Input -->
+    <label for="favColor">Select your favorite color</label>
+    <input type="color" id="favColor">
+
+    <br>
+
+    <!-- Checkbox Input -->
+    <input type="checkbox" id="agree">
+    <label for="agree">Do you agree?</label>
+
+    <br>
+
+    <!-- Password Input -->
+    <label for="pw">Enter your password</label>
+    <input type="password" id="pw">
+
+    <br>
+
+    <!-- Email Input -->
+    <label for="email">Email</label>
+    <input type="email" id="email">
+
+    <fieldset>
+      <legend>Best Movie Franchise</legend>
+      <!-- Radio Inputs -->
+      <!-- Radio Inputs must be linked together using the name attribute so that only one option can be selected -->
+      <!-- When a selected radio input in a form in submitted/sent what is sent is the value set for the value attribute -->
+      <input type="radio" id="paulBlart" value="paulBlart" name="movies">
+      <label for="paulBlart">Paul Blart: Mall Cop</label>
+      <br>
+      <input type="radio" id="shrek" value="shrek" name="movies">
+      <label for="shrek">Shrek</label>
+      <br>
+      <input type="radio" id="dragon" value="dragon" name="movies">
+      <label for="dragon">How To Train Your Dragon</label>
+      <br>
+      <input type="radio" id="grownUps" value="grownUps" name="movies">
+      <label for="grownUps">Grown Ups</label>
+    </fieldset>
+
+    <label for="num">Select a number</label>
+    <!-- The step attribute will increase the number by the value set -->
+    <input type="number" id="num" step="2">
+
+    <br>
+
+    <label for="secret">Upload the Top Secret Document</label>
+    <!-- File Input (For uploading a file) -->
+    <input type="file" id="secret">
+
+    <br>
+
+    <!-- When clicked a submit input will submit/send the values in the other forms elements that are inside the same form as the submit input -->
+    <input type="submit">
+
+  </form>
+
+  <form>
+    <fieldset>
+      <label for="movie">Number Titled Movies</label>
+      <!-- Using the "multiple" attribute on a select element will allow the user to select multiple options -->
+      <select name="movie" id="movie" multiple>
+        <option value="1922">1922</option>
+        <option value="1917">1917</option>
+        <option value="21">21</option>
+        <option value="21jumpStreet">21 Jump Street</option>
+      </select>
+      <!-- Similar to a submit input a button will submit a form -->
+      <button>DON'T PUSH THE BUTTON</button>
+    </fieldset>
+  </form>
+
+</body>
+
+</html>

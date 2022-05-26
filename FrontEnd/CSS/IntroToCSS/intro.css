@@ -1,0 +1,25 @@
+/* This is how comments are made in CSS */
+/* cmd + / works to make comments in CSS as well */
+
+/* CSS Syntax */
+/* 
+selector {
+    property: value;
+    second-property: value;
+}
+*/
+
+/* Example 1 */
+/* 
+All H1 elements now are aqua colored and are 42 pixels tall. P elements are spring green and have
+a blanched almond colored border
+*/
+h1 {
+    color: aqua;
+    font-size: 42px;
+}
+
+p {
+    background-color: springgreen;
+    border: blanchedalmond;
+}

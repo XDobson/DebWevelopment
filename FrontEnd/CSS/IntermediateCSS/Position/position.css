@@ -1,0 +1,82 @@
+/* CSS Positions */
+
+div, h1 {
+    font-size: 50px;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: gray;
+    margin: 20px;
+  
+    /* For Absolute positioning of child elements */
+    /* position: relative; */
+  }
+  
+  #red {
+    background-color: red;
+  
+    /* Static is default position property value for all elements */
+    /* position: static; */
+  
+    /* The Relative position property value allows us to move the element relative to its normal starting position with the top, right, bottom, or left properties. */
+    /* position: relative; */
+    /* Moves the element 50px down */
+    /* top: 50px; */
+    /* Moves the element 50px to the right */
+    /* left: 50px; */
+  
+    /* The Absolute position property value removes the element from the document. However, it still displays on the screen a specified new position. */
+    /* When an element has an Absolute property value it will position itself relative to the first parent/ancestor element with a position of something other than static. Must include top, right, bottom, or left for the absolute position location to take affect (NOTE: If no parent/ancestor elements with a position value other than static is found, then the element will position itself relative to the root element (AKA The HTML element) placing it relative to the browser window/viewport) */
+    /* NOTE: The Absolute property value will also change the element to an Inline element if it is not already */
+    /* position: absolute; */
+    /* right: 100px; */
+    /* bottom: 100px; */
+  
+  
+    /* The Fixed position property value is like Absolute in that is completely removes the element from the document, However, unlike Absolute it will always position itself relative to the browser window. Also, fixed will force the element to remain in the same location on the screen as you scroll. */
+    /* position: fixed; */
+    /* right: 100px; */
+    /* bottom: 100px; */
+  
+  
+    /* The Sticky position property value is like a combination of relative and fixed. When the element hits the top of the screen (Or a set breaking point) it becomes a fixed position as you scroll and will stick to the top of the screen (Or a set breaking point). Also, an element with a position of Sticky is only fixed positioned while inside of its parent element. */
+    /* position: sticky; */
+    /* Example of top of the screen */
+    /* top: 0; */
+    /* Example of a breaking point (30px from top of the screen in this example) */
+    /* top: 30px; */
+  }
+  
+  #green {
+    background-color: green;
+  }
+  
+  #blue {
+    background-color: blue;
+  }
+  
+  #yellow {
+    background-color: yellow;
+    position: relative;
+    top: 40px;
+    /* Z-Index determines whether an element will display in front or behind another element (NOTE: The default z-index for elements is auto (AKA Zero). The element with the higher z-index will display in front of elements with a lower z-index) */
+    z-index: 1;
+    /* Z-Index will NOT override a child element displaying in front of a parent element. However, this can be done using negative z-index on the child element */
+    /* z-index: -1; */
+  }
+  
+  #purple {
+    background-color: purple;
+    position: relative;
+    bottom: 10px;
+    z-index: 2;
+  }
+  
+  #orange {
+    background-color: orange;
+    /* Example of a sticky element that has no parent to stop it from being fixed on the screen */
+    /* position: sticky; */
+    /* top: 0; */
+  }

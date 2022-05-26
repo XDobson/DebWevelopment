@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta desc="Practicing">
+    <title>Practicing</title>
+</head>
+
+<body>
+    <form>
+
+        <fieldset>
+            <legend> this is a fieldset, basically just a box. </legend>
+
+            <!-- Name links the radio buttons, Value is what gets sent, id is used for 
+            assigning labels using the For variable. Labels will default to the last 
+            unnamed input but default.  -->
+            <input type="radio" name="linkedup" value="Scree" id="Wooloo">
+            <label>First option</label>
+
+            <input type="radio" name="linkedup" value="screeee2" id="wobofet">
+            <label>Second option</label>
+
+            <input type="radio" name="linkedup" value="scre3" id="squirtle">
+            <label>Third option</label>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Choice Numbering</legend>
+
+            <!-- 
+            Id is for labels, Step is how much it goes up and down when arrows are pressed
+            and also the valid options can only be a multiple of what the step is. Name is 
+            needed to save the value.
+             -->
+            <label for="number">You can only put a number here</label>
+            <input type="number" id="number" name="numberInput" step="5">
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Upload files here</legend>
+
+            <!-- Upload a file here -->
+            <label for="fileUpload">You can upload a file here<br></label>
+            <input type="file" name="fileInput" id="fileUpload">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Multiple Options</legend>
+
+            <!-- Choices will show up in their own box if "multiple" is added
+            to the tag, and multiple options will be able to be saved. if not,
+            it will be a drop down menu and only one option will be able to be
+            selected -->
+            <label for="choosing">Multiple Choices</label>
+            <br>
+            <select name="choices" id="choosing" multiple>
+                <option value="choice1">Choose me</option>
+                <option value="choice2">No Choose me</option>
+                <option value="choice3">No Wait Choose me!</option>
+            </select>
+            <br>
+            <br>
+            <label for="chooseWisely">Tough Choice</label>
+            <br>
+            <select name="morechoices" id="chooseWisely">
+                <option value="choice1">You</option>
+                <option value="choice1">Can</option>
+                <option value="choice1">Only</option>
+                <option value="choice1">Pick</option>
+                <option value="choice1">One</option>
+            </select>
+        </fieldset>
+        <input type="submit">
+        <br>
+        <button>Push</button>
+    </form>
+</body>
+
+</html>

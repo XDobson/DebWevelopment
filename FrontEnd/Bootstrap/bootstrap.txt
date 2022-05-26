@@ -1,0 +1,15 @@
+BOOTSTRAP
+
+Bootstrap is a Front End Framework thats used for building responsive webpages and web applications. Bootstrap includes HTML, CSS, and some JavaScript 
+(ex. Dropdown menus, nav bars, both require JavaScript)
+
+1. Bootstrap features
+    A. Classes
+        i. The best feature bootstrap has is all the pre-made css classes that can be applied to HTML elements.
+    B. Components
+        i.Bootstrap has prebuilt Components as well that can be ported over to your own HTML
+
+2.Using Bootstrap
+    A. The first way to include Bootstrap is to link to it inside of an HTML, like google fonts or stylesheets. getbootstrap.com has the files you'll be linking to.
+    B. The second way is to download the file and link to them locally, inside of the project folder (even more like how we link to css files)
+    
